@@ -4,16 +4,15 @@
     padding: 0;
 }
 
-
-/* .playfair-display-font {
-    font-family: cursive;
-  } */
-
 .playfair-display-font {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+html, body {
+    overflow: auto;
 }
 
 body {
@@ -24,7 +23,6 @@ body {
     justify-content: flex-start;
     height: 100vh;
     color: #333;
-    text-align: center;
     flex-direction: column;
 }
 
@@ -40,9 +38,27 @@ body::before {
     bottom: 0;
     z-index: -1;
 
+
+}
+
+ul{
+    text-align: left;
 }
 
 h1{
+    font-family: "Playfair Display", serif;
+    font-size: 300%;
+    justify-content: center;
+}
+
+h2{
+    font-family: "Playfair Display", serif;
+    font-size: 200%;
+    justify-content: center;
+}
+
+h3{
+    font-family: "Playfair Display", serif;
     font-size: 300%;
     justify-content: center;
 }
@@ -88,11 +104,23 @@ h1{
     text-align: center;
     font-size: 20px;
     color: #333;
-    background-color: rgba(221, 118, 210, 0.61);
+    background-color: rgba(217, 110, 207, 0.61);
     border-radius: 15px;
     text-decoration: none;
     width: 50%;
     padding: 50px;
+}
+
+.grid{
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.orange{
+    background-color: rgba(135, 207, 235, 0.699);
 }
 
 div{
@@ -101,6 +129,16 @@ div{
     font-size: 10;
     padding: 5px;
     text-align: center;
+}
+
+.card{
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 p{
