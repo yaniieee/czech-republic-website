@@ -27,7 +27,8 @@ body {
 }
 
 body::before {
-    background:url("../images/CharlesBridge.jpg");
+    background:url("../images/CharlesBridge2.jpg") no-repeat center center fixed;
+    background-attachment: fixed;
     background-size: cover;
     opacity: 0.5;
     position: absolute;
@@ -119,8 +120,10 @@ h3{
     width: 100%;
     padding-left: 50px;
     padding-right: 50px;
+    gap: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
 }
 
 .orange{
@@ -147,7 +150,59 @@ div{
 
 }
 
+.card-header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #333;
+    background-color: rgba(217, 110, 207, 0.61);
+    border-radius: 15px;
+    text-decoration: none;
+}
+
 p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.jeonghan-image{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.jeonghan-image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.jeonghan-image-container img{
+    display: block;
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.jeonghan-container p{
+    font-size: 15px;
+    color: #333;
+    background-color: rgba(217, 110, 207, 0.61);
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.jeonghan-image-container a{
+    font-size: 50px;
+    text-decoration: none;
+    color: #7b4747;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.jeonghan-image-container a:active{
+    color: #333;
+    background-color: rgba(0, 0, 0, 0.2);
 }
