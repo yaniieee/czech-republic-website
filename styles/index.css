@@ -90,6 +90,7 @@ h3{
 }
 
 .header{
+    position: relative;
     padding-top: auto;
     text-align: center;
     font-size: 30px;
@@ -205,4 +206,13 @@ p{
 .jeonghan-image-container a:active{
     color: #333;
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+.flag{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: auto;
+    z-index: 1000;
 }
